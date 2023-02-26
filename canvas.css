@@ -1,14 +1,34 @@
 canvas{
-    box-shadow: black 20px 10px 50px;
-    background: black;
+    box-shadow: black 20px 10px 50px;   
 }
+
+
 
 h1 {
     margin: 0px;
     margin-bottom: 10px;
     font-size: 2.9em;
-    font-family:"Helvetica";
-    color: white;
+    font-family:"Rubik", sans-serif;
+    color: lightcoral;
+    
+    
+}
+
+h1 > .magic {
+
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    white-space: nowrap;
+
 }
 
 body{
@@ -17,6 +37,6 @@ body{
     align-items: center;
     padding: 0px;
     margin: 0px;
-    height: 100px;
-    background: black;
+    height: 100vh;
+    background: linear-gradient(darkblue,black);
 }
