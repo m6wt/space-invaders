@@ -6,8 +6,8 @@ export default class EnemyController {
     enemyMap = [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [2, 2, 2, 3, 3, 3, 3, 2, 2, 2],
-        [2, 2, 2, 3, 3, 3, 3, 2, 2, 2],
+        [2, 2, 2, 3, 4, 4, 3, 2, 2, 2],
+        [2, 2, 2, 3, 4, 4, 3, 2, 2, 2],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
       ];
@@ -30,9 +30,9 @@ export default class EnemyController {
         this.playerBulletController = playerBulletController;
 
         this.enemyDeathSound = new Audio('sounds/enemy-death.wav');
-        //this.ememyDeathSound.volume = 1;
+        this.enemyDeathSound.volume = 0.1 ;
         this.createEnemies();
-    }
+      } 
 
     draw(ctx) {
         this.decrementMoveDownTimer();
